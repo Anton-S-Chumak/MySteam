@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+- '10'
+
+before_install:
+- npm install -g @angular/cli
+install: npm install
+
+branches:
+  only:
+  - dev
+
+deploy:
+  provider: heroku
+  app: fe-lab-my-steam-chumak
+  api_key:
+    secure: "9d600efb-61c8-4955-9da7-1abf057b5620"
