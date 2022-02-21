@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/my-steam'),
+      dir: require('path').join(__dirname, './coverage/git-anton_chumak-angular'),
       subdir: '.',
       reporters: [
         { type: 'html' },
